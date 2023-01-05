@@ -62,9 +62,9 @@ int main(){
    for(int a=0;a<s1.size();a++){
     for(int b = 0; b<s2.size();b++){
         MemoizationArray[a][b] = -1;
-        cout<<MemoizationArray[a][b]<<" ";
+        
     }
-    cout<<endl;
+   
    }
    cout<<LongestCommonSubsequenceMemoization(s1,s2)<<endl;
   
