@@ -16,16 +16,18 @@ public:
             return;
         }
         traversetree(root->left, arr);
-        traversetree(root->right, arr);
         arr.push_back(root->val);
+        traversetree(root->right, arr);
+        
     }
     int kthSmallest(TreeNode* root, int k) {
         vector<int> arr;
         traversetree(root,arr);
-        sort(arr.begin(),arr.end());
-        // for(int i =0; i<size;i++){
+        // for(int i =0; i<arr.size();i++){
         //     cout<<arr[i]<<" ";
         // }
+        
+       
         return arr[k-1];
     }
 };
