@@ -36,5 +36,5 @@ int countDistinctBitwiseOR(vector<int>& inputVector, int size)
     }
     return st.size() ;
 
-
+// Problem 19
 }
